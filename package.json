@@ -1,0 +1,26 @@
+{
+  "name": "allons-y-home",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CodeCorico/allons-y-home.git"
+  },
+  "author": "CodeCorico <hello@codecorico.com>",
+  "bugs": {
+    "url": "https://github.com/CodeCorico/allons-y-home/issues"
+  },
+  "homepage": "https://github.com/CodeCorico/allons-y-home",
+  "engines": {
+    "node": ">=4.1",
+    "npm": ">=3.2"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "fs-extra": "^0.30.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-uglifyjs": "^0.6.2",
+    "jsonfile": "^2.3.1"
+  }
+}
