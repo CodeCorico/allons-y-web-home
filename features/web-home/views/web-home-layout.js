@@ -1,17 +1,17 @@
 (function() {
   'use strict';
 
-  window.Ractive.controllerInjection('home-layout', [
+  window.Ractive.controllerInjection('web-home-layout', [
     '$component', '$data', '$done',
   function homeLayoutController(
     $component, $data, $done
   ) {
-    var HomeLayout = $component({
+    var WebHomeLayout = $component({
       data: $data
     });
 
-    HomeLayout.on('teardown', function() {
-      HomeLayout = null;
+    WebHomeLayout.on('teardown', function() {
+      WebHomeLayout = null;
     });
 
     $done();

@@ -5,6 +5,7 @@
 
     $Page.set('apps', [{
       name: $i18nService._('Home'),
+      selected: true,
       select: function() {
         window.page('/');
       }
