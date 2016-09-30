@@ -20,10 +20,10 @@ module.exports = [{
   exit: ['$Layout', '$next', function($Layout, $next) {
     var Home = $Layout.findChild('name', 'web-home-layout');
 
-    if (!Home) {
-      return $next();
+    if (Home && (window.location.pathname && window.location.pathname != '/')) {
+      return Home.teardown().then($next);
     }
 
-    Home.teardown().then($next);
+    $next();
   }]
 }];
