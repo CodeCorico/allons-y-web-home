@@ -16,11 +16,5 @@
     "node": ">=4.1",
     "npm": ">=3.2"
   },
-  "license": "MIT",
-  "dependencies": {
-    "fs-extra": "^0.30.0",
-    "gulp-concat": "^2.6.0",
-    "gulp-uglifyjs": "^0.6.2",
-    "jsonfile": "^2.3.1"
-  }
+  "license": "MIT"
 }
