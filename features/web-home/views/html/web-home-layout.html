@@ -1,3 +1,71 @@
 <div class="web-home-layout">
-  {{#inject web-home-layout /}}
+  <rv-require name="pl-scrolls" src="/public/vendor/plumes/scrolls/pl-scrolls"></rv-require>
+
+  <div class="pl-scrolls">
+
+    {{#if headerCover}}
+      <div
+        class="header-bg"
+        style="transform: translateY({{headerTop}}px); background-image: url('{{headerCover}}');"
+      >
+        {{#if headerCopyright}}
+          <a href="{{headerCopyrightUrl}}">{{headerCopyright}}</a>
+        {{/if}}
+      </div>
+
+      <h1 style="transform: translateY({{h1Top}}px);">{{_('Hello')}} {{user.firstname}}</h1>
+    {{/if}}
+
+    <div class="web-home-metrics">
+      {{#metrics}}
+        <div class="web-home-metric {{show ? 'show' : ''}} {{hasOldValue ? 'light' : ''}}">
+          <div class="shape-shadow"></div><div class="shape" title="{{value}}">{{formatMetric(value)}}</div>
+          <span>{{_(title)}}</span>
+        </div>
+      {{/metrics}}
+
+      <div class="clear"></div>
+    </div>
+
+    <div class="web-home-content">
+      {{#tiles}}
+        <a href="{{url}}"
+          class="web-home-tile {{show ? 'show' : ''}} {{large ? 'large' : ''}}"
+          style="{{large ? '' : 'background-image: url(\'' + (cover || '/public/web-home/web-home-cover.png') + '\');'}}"
+        >
+          {{#if large}}
+            <div
+              class="web-home-tile-cover"
+              style="
+                background-image: url('{{cover || '/public/web-home/web-home-cover.png'}}');
+                animation-name: web-home-tile-cover-{{animationNumber}};
+                animation-duration: {{animationDuration}}s;
+              "
+            ></div>
+          {{/if}}
+
+
+          {{#if details}}
+            <div class="details">
+              {{#if details.title}}
+                <h2>{{_(details.title)}}</h2>
+              {{/if}}
+              {{#if details.text}}
+                <p>{{_(details.text)}}</p>
+              {{/if}}
+            </div>
+          {{/if}}
+          {{#if centered}}
+            <div class="centered">
+              {{#if centered.title}}
+                <h2>{{_(centered.title)}}</h2>
+              {{/if}}
+            </div>
+          {{/if}}
+        </a>
+      {{/tiles}}
+
+      <div class="clear"></div>
+    </div>
+  </div>
 </div>

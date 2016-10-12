@@ -1,0 +1,7 @@
+{
+  "env": [{
+    "type": "confirm",
+    "name": "WEB_HOME_BING",
+    "message": "Enable Bing's picture of the day in the HOME:"
+  }]
+}
