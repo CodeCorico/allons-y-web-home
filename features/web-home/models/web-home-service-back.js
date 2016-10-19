@@ -47,7 +47,7 @@ module.exports = function() {
       };
 
       this.coverDefault = function(thenCall) {
-        _cover =  '/public/web-home/web-home-cover.png';
+        _cover =  null;
         _copyright = null;
         _copyrightUrl = null;
 
