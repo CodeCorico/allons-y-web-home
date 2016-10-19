@@ -196,7 +196,6 @@
     margin: 0 2rem;
     padding-bottom: 3rem;
 
-
     .web-home-tile, .web-home-tile:hover, .web-home-tile:visited {
       color: white;
       text-decoration: none;
@@ -208,12 +207,11 @@
       float: left;
       min-width: 17rem;
       height: 15rem;
-      margin: 0 0 2rem 2rem;
+      margin: 0 1rem 2rem;
       background-color: @accentColor;
       background-position: 50%;
       background-repeat: no-repeat;
       background-size: cover;
-      border-radius: 0.5rem;
       overflow: hidden;
       box-shadow: 2px 10px 30px rgba(0, 0, 0, 0.4);
       opacity: 0;
@@ -285,6 +283,49 @@
           line-height: 1;
           margin: 0;
           text-transform: uppercase;
+          background: fade(@accentColor, 50%);
+          padding: 1rem 0;
+        }
+      }
+
+      &.web-home-welcome {
+        box-sizing: border-box;
+        min-width: 100%;
+        margin: 0 0 2rem;
+        background: #333;
+        color: white;
+        padding: 2rem;
+        height: auto;
+
+        &.show.hide {
+          opacity: 0;
+          .transform(translateY(-10rem));
+          .transition(all 0.35s @easeOutQuart);
+        }
+
+        h2 {
+          font-size: 2rem;
+          font-weight: 400;
+          margin: 0 0 0.4rem;
+        }
+
+        .web-home-welcome-border {
+          width: 3rem;
+          height: 1px;
+          background: white;
+          overflow: hidden;
+          margin-bottom: 1rem;
+        }
+
+        .web-home-welcome-button {
+          text-align: center;
+
+          button {
+            background: @successColor;
+            border: none;
+            color: white;
+            margin: 0;
+          }
         }
       }
     }

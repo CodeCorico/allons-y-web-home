@@ -28,16 +28,31 @@
     </div>
 
     <div class="web-home-content">
+      {{#if !welcome}}
+        <div class="web-home-tile web-home-welcome {{welcomeShow ? 'show' : ''}} {{welcomeHide ? 'hide' : ''}}">
+          <h2>{{_('Welcome')}}</h2>
+          <div class="web-home-welcome-border"></div>
+          <p>
+            {{_('Here is your HOME app. Any content opened will be referenced here for easy access.')}}<br />
+            {{_('On the top corners are buttons to open and close various contexts linked to the content and the platform.')}}<br />
+            {{_('To swith from an app to another, or to go back to the index of the app, click on the app selector on the platform top center.')}}
+          </p>
+          <div class="web-home-welcome-button">
+            <button on-click="welcomeGetIt">{{_('Get it')}}</button>
+          </div>
+        </div>
+      {{/if}}
+
       {{#tiles}}
         <a href="{{url}}"
           class="web-home-tile {{show ? 'show' : ''}} {{large ? 'large' : ''}}"
-          style="{{large ? '' : 'background-image: url(\'' + (cover || '/public/web-home/web-home-cover.png') + '\');'}}"
+          style="{{large || !cover ? '' : 'background-image: url(\'' + cover + '\');'}}"
         >
           {{#if large}}
             <div
               class="web-home-tile-cover"
               style="
-                background-image: url('{{cover || '/public/web-home/web-home-cover.png'}}');
+                {{cover ? 'background-image: url(\'' + cover + '\');' : ''}}
                 animation-name: web-home-tile-cover-{{animationNumber}};
                 animation-duration: {{animationDuration}}s;
               "
