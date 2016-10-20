@@ -1,23 +1,21 @@
 {
-  "name": "allons-y-home",
-  "version": "0.1.0",
-  "description": "",
-  "main": "index.js",
+  "name": "allons-y-web-home",
+  "version": "1.0.0",
+  "description": "Homepage app.",
+  "license": "MIT",
+  "homepage": "http://allons-y.io",
+  "author": "CodeCorico <hello@codecorico.com>",
+  "bugs": "https://github.com/CodeCorico/allons-y-web-home/issues",
   "repository": {
     "type": "git",
-    "url": "https://github.com/CodeCorico/allons-y-home.git"
+    "url": "https://github.com/CodeCorico/allons-y-web-home.git"
   },
-  "author": "CodeCorico <hello@codecorico.com>",
-  "bugs": {
-    "url": "https://github.com/CodeCorico/allons-y-home/issues"
-  },
-  "homepage": "https://github.com/CodeCorico/allons-y-home",
   "engines": {
     "node": ">=4.1",
     "npm": ">=3.2"
   },
-  "license": "MIT",
   "dependencies": {
+    "allons-y-web": "^1.0.0",
     "async": "^2.1.2",
     "request": "^2.75.0"
   }
