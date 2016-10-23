@@ -17,8 +17,8 @@ module.exports = function() {
             }
           },
           MAX_TILES = 30,
-          BING_URL = 'http://bing.com',
-          BING_SERVICE = 'http://www.bing.com/HPImageArchive.aspx?format=js&idx=0&n=1&mkt=en-US',
+          BING_URL = 'https://bing.com',
+          BING_SERVICE = 'https://www.bing.com/HPImageArchive.aspx?format=js&idx=0&n=1&mkt=en-US',
 
           request = require('request'),
           async = require('async'),
