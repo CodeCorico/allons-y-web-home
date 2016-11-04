@@ -3,7 +3,7 @@
   "version": "1.0.1",
   "description": "Homepage app.",
   "license": "MIT",
-  "homepage": "http://allons-y.io",
+  "homepage": "https://allons-y.io",
   "author": "CodeCorico <hello@codecorico.com>",
   "bugs": "https://github.com/CodeCorico/allons-y-web-home/issues",
   "repository": {
@@ -14,8 +14,11 @@
     "node": ">=4.1",
     "npm": ">=3.2"
   },
+  "devDependencies": {
+    "allons-y-dev-chore": "^1.0.0"
+  },
   "dependencies": {
-    "allons-y-web": "^1.0.1",
+    "allons-y-web": "^1.0.3",
     "async": "^2.1.2",
     "request": "^2.75.0"
   }
