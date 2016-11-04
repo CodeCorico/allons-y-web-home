@@ -3,18 +3,18 @@
 
   <div class="pl-scrolls">
 
-    {{#if headerCover}}
-      <div
-        class="header-bg"
-        style="transform: translateY({{headerTop}}px); background-image: url('{{headerCover}}');"
-      >
-        {{#if headerCopyright}}
-          <a href="{{headerCopyrightUrl}}">{{headerCopyright}}</a>
-        {{/if}}
-      </div>
+    {{#inject web-home-layout-before /}}
 
-      <h1 style="transform: translateY({{h1Top}}px);">{{_('Hello')}} {{user.firstname}}</h1>
-    {{/if}}
+    <div
+      class="header-bg"
+      style="transform: translateY({{headerTop}}px); {{headerCover ? 'background-image: url(\'' + headerCover + '\');' : ''}}"
+    >
+      {{#if headerCopyright}}
+        <a href="{{headerCopyrightUrl}}">{{headerCopyright}}</a>
+      {{/if}}
+    </div>
+
+    <h1 style="transform: translateY({{h1Top}}px);">{{_('Hello')}} {{user.firstname}}</h1>
 
     <div class="web-home-metrics">
       {{#metrics}}
