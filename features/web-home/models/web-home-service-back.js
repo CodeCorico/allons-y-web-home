@@ -121,9 +121,8 @@ module.exports = function() {
       };
 
       this.metric = function(metric, value) {
-        var name = typeof metric == 'string' ? metric : metric.name;
-
-        var toAdd = true;
+        var name = typeof metric == 'string' ? metric : metric.name,
+            toAdd = true;
 
         for (var i = 0; i < _metrics.length; i++) {
           if (_metrics[i].name == name) {
@@ -155,12 +154,59 @@ module.exports = function() {
         _this.callMetrics();
       };
 
-      this.callMetrics = function($socket, eventName, args, callback) {
-        eventName = eventName || 'web-home-metrics';
+      function _fireMetrics(socket, eventName) {
+        if (!socket || !socket.user) {
+          return;
+        }
+
+        var metrics = [];
+
+        _metrics.forEach(function(metric) {
+          if (metric.permissions && !socket.user.hasPermissions(metric.permissions)) {
+            return;
+          }
+
+          metrics.push({
+            name: metric.name,
+            title: metric.title,
+            value: metric.value
+          });
+        });
+
+        if (!metrics.length) {
+          return;
+        }
 
         $RealTimeService.fire(eventName, {
-          metrics: _metrics
-        }, $socket || null);
+          metrics: metrics
+        }, socket);
+      }
+
+      this.callMetrics = function($socket, eventName, args, callback) {
+        if (!_metrics || !_metrics.length) {
+          if (callback) {
+            callback();
+          }
+
+          return;
+        }
+
+        var $SocketsService = DependencyInjection.injector.service.get('$SocketsService', true);
+
+        if (!$SocketsService) {
+          return;
+        }
+
+        eventName = eventName || 'web-home-metrics';
+
+        if ($socket) {
+          _fireMetrics($socket, eventName);
+        }
+        else {
+          $SocketsService.each(function(socket) {
+            _fireMetrics(socket, eventName);
+          });
+        }
 
         if (callback) {
           callback();
