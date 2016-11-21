@@ -49,10 +49,6 @@
         WebHomeLayout.set('headerTop', _$el.scrolls.scrollTop() * 0.5);
         WebHomeLayout.set('h1Top', _$el.scrolls.scrollTop() * 0.65);
       }
-      else {
-        WebHomeLayout.set('headerTop', 0);
-        WebHomeLayout.set('h1Top', 0);
-      }
     });
 
     function _setCover(args) {
@@ -121,10 +117,6 @@
               }, 1510);
             }
           });
-
-          if (!WebHomeLayout.get('welcome') && !WebHomeLayout.get('welcomeShow')) {
-            WebHomeLayout.set('welcomeShow', true);
-          }
         }
       }, {
         name: 'web-home-tiles',
@@ -177,6 +169,10 @@
           _scrolls.update();
         }
       }], ['web-home-cover', 'web-home-metrics', 'web-home-tiles']);
+
+      if (!WebHomeLayout.get('welcome') && !WebHomeLayout.get('welcomeShow')) {
+        WebHomeLayout.set('welcomeShow', true);
+      }
     }
 
     WebHomeLayout.on('welcomeGetIt', function() {

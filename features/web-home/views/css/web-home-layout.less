@@ -50,6 +50,10 @@
   bottom: 0;
   overflow: hidden;
 
+  .web-home-mobile-header {
+    display: none;
+  }
+
   .header-bg {
     position: absolute;
     top: 0;
@@ -202,7 +206,7 @@
     }
 
     .web-home-tile {
-      flex: 1;
+      flex: 1 0 auto;
       position: relative;
       float: left;
       min-width: 17rem;
@@ -334,10 +338,21 @@
 
 .media-mobile {
   .web-home-layout {
+    .web-home-mobile-header {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-position: 50%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      .animation(web-home-header-show 1s);
+    }
+
     .header-bg {
-      position: fixed;
-      height: auto;
-      bottom: 0;
+      background: none !important;
     }
 
     h1 {
@@ -359,6 +374,7 @@
       .web-home-tile, .web-home-tile.large, .web-home-tile.space {
         width: 100%;
         margin-left: 0;
+        min-width: 0;
       }
     }
   }

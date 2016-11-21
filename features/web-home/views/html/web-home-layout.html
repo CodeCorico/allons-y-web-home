@@ -1,20 +1,21 @@
 <div class="web-home-layout">
-  <rv-require name="pl-scrolls" src="/public/vendor/plumes/scrolls/pl-scrolls"></rv-require>
+  <div class="web-home-mobile-header" style="{{headerCover ? 'background-image: url(\'' + headerCover + '\');' : ''}}"></div>
 
+  <rv-require name="pl-scrolls" src="/public/vendor/plumes/scrolls/pl-scrolls"></rv-require>
   <div class="pl-scrolls">
 
     {{#inject web-home-layout-before /}}
 
     <div
       class="header-bg"
-      style="transform: translateY({{headerTop}}px); {{headerCover ? 'background-image: url(\'' + headerCover + '\');' : ''}}"
+      style="{{headerTop !== 0 ? 'transform: translateY(' + headerTop + 'px);' : ''}} {{headerCover ? 'background-image: url(\'' + headerCover + '\');' : ''}}"
     >
       {{#if headerCopyright}}
         <a href="{{headerCopyrightUrl}}">{{headerCopyright}}</a>
       {{/if}}
     </div>
 
-    <h1 style="transform: translateY({{h1Top}}px);">{{_('Hello')}} {{user.firstname}}</h1>
+    <h1 style="transform: translateY({{h1Top}}px);">{{_('Hello')}} {{user.firstname || _('visitor!')}}.</h1>
 
     <div class="web-home-metrics">
       {{#metrics}}
