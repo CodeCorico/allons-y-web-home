@@ -1,3 +1,9 @@
+<a name="1.0.4"></a>
+# [1.0.4](https://github.com/CodeCorico/allons-y-web-home/compare/1.0.3...1.0.4) (2016-11-21)
+
+### Bug Fixes
+* **web home layout:** support iPhone Safari/Chrome [#b141f9e](https://github.com/CodeCorico/allons-y-web-home/commit/b141f9e)
+
 <a name="1.0.3"></a>
 # [1.0.3](https://github.com/CodeCorico/allons-y-web-home/compare/1.0.2...1.0.3) (2016-11-08)
 
