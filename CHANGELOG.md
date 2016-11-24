@@ -1,3 +1,9 @@
+<a name="1.0.5"></a>
+# [1.0.5](https://github.com/CodeCorico/allons-y-web-home/compare/1.0.4...1.0.5) (2016-11-24)
+
+### Bug Fixes
+* **web-home resources:** update the favicon from the new allons-y logo [#fb3f062](https://github.com/CodeCorico/allons-y-web-home/commit/fb3f062)
+
 <a name="1.0.4"></a>
 # [1.0.4](https://github.com/CodeCorico/allons-y-web-home/compare/1.0.3...1.0.4) (2016-11-21)
 
