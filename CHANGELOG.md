@@ -1,3 +1,12 @@
+<a name="1.0.6"></a>
+# [1.0.6](https://github.com/CodeCorico/allons-y-web-home/compare/1.0.5...1.0.6) (2016-11-30)
+
+### Features
+* **web home after init:** update the url every 12h [#1de7229](https://github.com/CodeCorico/allons-y-web-home/commit/1de7229)
+
+### Bug Fixes
+* **web home layout:** hello visitor wording [#b76977c](https://github.com/CodeCorico/allons-y-web-home/commit/b76977c)
+
 <a name="1.0.5"></a>
 # [1.0.5](https://github.com/CodeCorico/allons-y-web-home/compare/1.0.4...1.0.5) (2016-11-24)
 
