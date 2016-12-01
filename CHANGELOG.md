@@ -1,3 +1,9 @@
+<a name="1.0.7"></a>
+# [1.0.7](https://github.com/CodeCorico/allons-y-web-home/compare/1.0.6...1.0.7) (2016-12-01)
+
+### Features
+* **web home layout:** disable welcome text on prerender [#98a2ca5](https://github.com/CodeCorico/allons-y-web-home/commit/98a2ca5)
+
 <a name="1.0.6"></a>
 # [1.0.6](https://github.com/CodeCorico/allons-y-web-home/compare/1.0.5...1.0.6) (2016-11-30)
 
