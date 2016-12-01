@@ -6,10 +6,11 @@
   function homeLayoutController(
     $RealTimeService, $Layout, $BodyDataService, $component, $data, $done
   ) {
-    var webHomeCookie = window.Cookies.getJSON('web.home') || {},
+    var prerender = $BodyDataService.data('prerender'),
+        webHomeCookie = window.Cookies.getJSON('web.home') || {},
         WebHomeLayout = $component({
           data: $.extend(true, {
-            welcome: webHomeCookie && webHomeCookie.welcome || false,
+            welcome: prerender || (webHomeCookie && webHomeCookie.welcome) || false,
             user: $BodyDataService.data('user'),
             headerTop: 0,
             h1Top: 0,
