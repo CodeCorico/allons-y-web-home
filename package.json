@@ -20,6 +20,12 @@
   "dependencies": {
     "allons-y-web": "^1.0.3",
     "async": "^2.1.2",
-    "request": "^2.75.0"
-  }
+    "request": "^2.75.0",
+    "snyk": "^1.110.2"
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
+  },
+  "snyk": true
 }
