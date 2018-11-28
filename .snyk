@@ -1,0 +1,118 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.13.1
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:minimatch:20160620':
+    - allons-y-web > allons-y-gulp > gulp > vinyl-fs > glob-watcher > gaze > globule > minimatch:
+        patched: '2018-11-28T09:57:46.762Z'
+    - allons-y-web > allons-y-gulp > gulp > vinyl-fs > glob-stream > minimatch:
+        patched: '2018-11-28T09:57:46.762Z'
+    - allons-y-web > allons-y-plumes > plumes > gulp > vinyl-fs > glob-stream > minimatch:
+        patched: '2018-11-28T09:57:46.762Z'
+    - allons-y-web > allons-y-routes > allons-y-gulp > gulp > vinyl-fs > glob-stream > minimatch:
+        patched: '2018-11-28T09:57:46.762Z'
+    - allons-y-web > allons-y-plumes > allons-y-gulp > gulp > vinyl-fs > glob-stream > minimatch:
+        patched: '2018-11-28T09:57:46.762Z'
+    - allons-y-web > allons-y-mvw-injection > allons-y-gulp > gulp > vinyl-fs > glob-stream > minimatch:
+        patched: '2018-11-28T09:57:46.762Z'
+    - allons-y-web > allons-y-js-cookie > allons-y-gulp > gulp > vinyl-fs > glob-stream > minimatch:
+        patched: '2018-11-28T09:57:46.762Z'
+    - allons-y-web > allons-y-events-manager > allons-y-gulp > gulp > vinyl-fs > glob-stream > minimatch:
+        patched: '2018-11-28T09:57:46.762Z'
+    - allons-y-web > allons-y-models > allons-y-gulp > gulp > vinyl-fs > glob-stream > minimatch:
+        patched: '2018-11-28T09:57:46.762Z'
+    - allons-y-web > allons-y-gulp > gulp > vinyl-fs > glob-stream > glob > minimatch:
+        patched: '2018-11-28T09:57:46.762Z'
+    - allons-y-web > allons-y-mvw-injection > allons-y-gulp > gulp > vinyl-fs > glob-stream > glob > minimatch:
+        patched: '2018-11-28T09:57:46.762Z'
+    - allons-y-web > allons-y-plumes > allons-y-gulp > gulp > vinyl-fs > glob-stream > glob > minimatch:
+        patched: '2018-11-28T09:57:46.762Z'
+    - allons-y-web > allons-y-models > allons-y-gulp > gulp > vinyl-fs > glob-stream > glob > minimatch:
+        patched: '2018-11-28T09:57:46.762Z'
+    - allons-y-web > allons-y-plumes > plumes > gulp > vinyl-fs > glob-stream > glob > minimatch:
+        patched: '2018-11-28T09:57:46.762Z'
+    - allons-y-web > allons-y-plumes > allons-y-ractive > allons-y-gulp > gulp > vinyl-fs > glob-stream > minimatch:
+        patched: '2018-11-28T09:57:46.762Z'
+    - allons-y-web > allons-y-bodydata > allons-y-models > allons-y-gulp > gulp > vinyl-fs > glob-stream > minimatch:
+        patched: '2018-11-28T09:57:46.762Z'
+    - allons-y-web > allons-y-i18n > allons-y-models > allons-y-gulp > gulp > vinyl-fs > glob-stream > minimatch:
+        patched: '2018-11-28T09:57:46.762Z'
+    - allons-y-web > allons-y-realtime > allons-y-models > allons-y-gulp > gulp > vinyl-fs > glob-stream > minimatch:
+        patched: '2018-11-28T09:57:46.762Z'
+    - allons-y-web > allons-y-plumes > allons-y-jquery > allons-y-gulp > gulp > vinyl-fs > glob-stream > minimatch:
+        patched: '2018-11-28T09:57:46.762Z'
+    - allons-y-web > allons-y-routes > allons-y-gulp > gulp > vinyl-fs > glob-stream > glob > minimatch:
+        patched: '2018-11-28T09:57:46.762Z'
+    - allons-y-web > allons-y-js-cookie > allons-y-gulp > gulp > vinyl-fs > glob-stream > glob > minimatch:
+        patched: '2018-11-28T09:57:46.762Z'
+    - allons-y-web > allons-y-events-manager > allons-y-gulp > gulp > vinyl-fs > glob-stream > glob > minimatch:
+        patched: '2018-11-28T09:57:46.762Z'
+    - allons-y-web > allons-y-async > allons-y-gulp > gulp > vinyl-fs > glob-stream > glob > minimatch:
+        patched: '2018-11-28T09:57:46.762Z'
+    - allons-y-web > allons-y-plumes > allons-y-jquery > allons-y-gulp > gulp > vinyl-fs > glob-stream > glob > minimatch:
+        patched: '2018-11-28T09:57:46.762Z'
+    - allons-y-web > allons-y-bodydata > allons-y-models > allons-y-gulp > gulp > vinyl-fs > glob-stream > glob > minimatch:
+        patched: '2018-11-28T09:57:46.762Z'
+    - allons-y-web > allons-y-plumes > allons-y-ractive > allons-y-gulp > gulp > vinyl-fs > glob-stream > glob > minimatch:
+        patched: '2018-11-28T09:57:46.762Z'
+    - allons-y-web > allons-y-realtime > allons-y-models > allons-y-gulp > gulp > vinyl-fs > glob-stream > glob > minimatch:
+        patched: '2018-11-28T09:57:46.762Z'
+    - allons-y-web > allons-y-i18n > allons-y-models > allons-y-gulp > gulp > vinyl-fs > glob-stream > glob > minimatch:
+        patched: '2018-11-28T09:57:46.762Z'
+    - allons-y-web > allons-y-async > allons-y-gulp > gulp > vinyl-fs > glob-stream > minimatch:
+        patched: '2018-11-28T09:57:46.762Z'
+    - allons-y-web > allons-y-async > allons-y-gulp > gulp > vinyl-fs > glob-watcher > gaze > globule > minimatch:
+        patched: '2018-11-28T09:57:46.762Z'
+    - allons-y-web > allons-y-plumes > plumes > gulp > vinyl-fs > glob-watcher > gaze > globule > minimatch:
+        patched: '2018-11-28T09:57:46.762Z'
+    - allons-y-web > allons-y-routes > allons-y-gulp > gulp > vinyl-fs > glob-watcher > gaze > globule > minimatch:
+        patched: '2018-11-28T09:57:46.762Z'
+    - allons-y-web > allons-y-plumes > allons-y-gulp > gulp > vinyl-fs > glob-watcher > gaze > globule > minimatch:
+        patched: '2018-11-28T09:57:46.762Z'
+    - allons-y-web > allons-y-mvw-injection > allons-y-gulp > gulp > vinyl-fs > glob-watcher > gaze > globule > minimatch:
+        patched: '2018-11-28T09:57:46.762Z'
+    - allons-y-web > allons-y-js-cookie > allons-y-gulp > gulp > vinyl-fs > glob-watcher > gaze > globule > minimatch:
+        patched: '2018-11-28T09:57:46.762Z'
+    - allons-y-web > allons-y-events-manager > allons-y-gulp > gulp > vinyl-fs > glob-watcher > gaze > globule > minimatch:
+        patched: '2018-11-28T09:57:46.762Z'
+    - allons-y-web > allons-y-models > allons-y-gulp > gulp > vinyl-fs > glob-watcher > gaze > globule > minimatch:
+        patched: '2018-11-28T09:57:46.762Z'
+    - allons-y-web > allons-y-gulp > gulp > vinyl-fs > glob-watcher > gaze > globule > glob > minimatch:
+        patched: '2018-11-28T09:57:46.762Z'
+    - allons-y-web > allons-y-mvw-injection > allons-y-gulp > gulp > vinyl-fs > glob-watcher > gaze > globule > glob > minimatch:
+        patched: '2018-11-28T09:57:46.762Z'
+    - allons-y-web > allons-y-plumes > allons-y-gulp > gulp > vinyl-fs > glob-watcher > gaze > globule > glob > minimatch:
+        patched: '2018-11-28T09:57:46.762Z'
+    - allons-y-web > allons-y-models > allons-y-gulp > gulp > vinyl-fs > glob-watcher > gaze > globule > glob > minimatch:
+        patched: '2018-11-28T09:57:46.762Z'
+    - allons-y-web > allons-y-plumes > plumes > gulp > vinyl-fs > glob-watcher > gaze > globule > glob > minimatch:
+        patched: '2018-11-28T09:57:46.762Z'
+    - allons-y-web > allons-y-plumes > allons-y-ractive > allons-y-gulp > gulp > vinyl-fs > glob-watcher > gaze > globule > minimatch:
+        patched: '2018-11-28T09:57:46.762Z'
+    - allons-y-web > allons-y-bodydata > allons-y-models > allons-y-gulp > gulp > vinyl-fs > glob-watcher > gaze > globule > minimatch:
+        patched: '2018-11-28T09:57:46.762Z'
+    - allons-y-web > allons-y-i18n > allons-y-models > allons-y-gulp > gulp > vinyl-fs > glob-watcher > gaze > globule > minimatch:
+        patched: '2018-11-28T09:57:46.762Z'
+    - allons-y-web > allons-y-realtime > allons-y-models > allons-y-gulp > gulp > vinyl-fs > glob-watcher > gaze > globule > minimatch:
+        patched: '2018-11-28T09:57:46.762Z'
+    - allons-y-web > allons-y-plumes > allons-y-jquery > allons-y-gulp > gulp > vinyl-fs > glob-watcher > gaze > globule > minimatch:
+        patched: '2018-11-28T09:57:46.762Z'
+    - allons-y-web > allons-y-routes > allons-y-gulp > gulp > vinyl-fs > glob-watcher > gaze > globule > glob > minimatch:
+        patched: '2018-11-28T09:57:46.762Z'
+    - allons-y-web > allons-y-js-cookie > allons-y-gulp > gulp > vinyl-fs > glob-watcher > gaze > globule > glob > minimatch:
+        patched: '2018-11-28T09:57:46.762Z'
+    - allons-y-web > allons-y-events-manager > allons-y-gulp > gulp > vinyl-fs > glob-watcher > gaze > globule > glob > minimatch:
+        patched: '2018-11-28T09:57:46.762Z'
+    - allons-y-web > allons-y-async > allons-y-gulp > gulp > vinyl-fs > glob-watcher > gaze > globule > glob > minimatch:
+        patched: '2018-11-28T09:57:46.762Z'
+    - allons-y-web > allons-y-plumes > allons-y-jquery > allons-y-gulp > gulp > vinyl-fs > glob-watcher > gaze > globule > glob > minimatch:
+        patched: '2018-11-28T09:57:46.762Z'
+    - allons-y-web > allons-y-bodydata > allons-y-models > allons-y-gulp > gulp > vinyl-fs > glob-watcher > gaze > globule > glob > minimatch:
+        patched: '2018-11-28T09:57:46.762Z'
+    - allons-y-web > allons-y-plumes > allons-y-ractive > allons-y-gulp > gulp > vinyl-fs > glob-watcher > gaze > globule > glob > minimatch:
+        patched: '2018-11-28T09:57:46.762Z'
+    - allons-y-web > allons-y-realtime > allons-y-models > allons-y-gulp > gulp > vinyl-fs > glob-watcher > gaze > globule > glob > minimatch:
+        patched: '2018-11-28T09:57:46.762Z'
+    - allons-y-web > allons-y-i18n > allons-y-models > allons-y-gulp > gulp > vinyl-fs > glob-watcher > gaze > globule > glob > minimatch:
+        patched: '2018-11-28T09:57:46.762Z'
